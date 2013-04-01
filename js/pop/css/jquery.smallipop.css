@@ -1,0 +1,12 @@
+.smallipop-instance.default a { color: #f49712;text-decoration: none; }
+.smallipop-instance.default .sipContent {
+    background-image: url(popupBg_03.png);
+    color: #5f5f5f;
+    font-family: Verdana,Geneva,sans-serif;
+    font-size: 10px;
+    font-style: italic;
+    height: 92px;
+    padding-left: 11px;
+    padding-top: 11px;
+    width: 153px;
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>advanced_search</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<!-- drop down menu -->
+
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" >
+$(document).ready(function()
+{
+$(".arrow").click(function()
+{
+var X=$(this).attr('id');
+
+if(X==1)
+{
+$(".submenu").hide();
+$(this).attr('id', '0');	
+}
+else
+{
+
+$(".submenu").show();
+$(this).attr('id', '1');
+}
+	
+});
+
+//Mouseup textarea false
+$(".submenu").mouseup(function()
+{
+return false
+});
+$(".arrow").mouseup(function()
+{
+return false
+});
+
+
+//Textarea without editing.
+$(document).mouseup(function()
+{
+$(".submenu").hide();
+$(".arrow").attr('id', '');
+});
+	
+});
+	
+	</script> <!-- end drop dowm script -->
+
+</head>
+<body>
+
+
+<div id="wrapper"><!--start wrapper-->
+<div class="header">
+<div class="login">
+</div>
+
+<div class="post">
+</div>
+
+<div class="create">
+</div>
+
+<div class="join">
+</div>
+<div class="clear"></div>
+<div class="logo">
+
+<img src="images/logo.png" width="261" height="118" class="left" />
+
+<div class="clear"></div>
+</div>
+
+
+
+
+<div class="search">
+<form method="post" name="search">
+<input type="text" value=".::. search easels .::."  class="text"/>
+<input type="image" src="images/search-icon.png" class="right" alt="Search" />
+</form>
+</div>
+<div class="clear"></div>
+
+<div class="advance">
+<a href="#">advanced search</a>
+</div>
+
+<div class="clear"></div>
+</div> <!-- end header -->
+
+
+<div class="clear"></div>
+</div> <!-- end wrapper -->
+<div class="bottom">
+</div>
+
+<div id="content">
+<div class="message-title"></div>
+<div class="clear"></div>
+
+
+<div class="inbox">
+Inbox
+<div class="clear"></div>
+</div> <!-- end inbox -->
+
+<div class="write-message">
+
+<a href="#"><img src="images/write-message.png" alt="Write Message" /></a>
+<div class="clear"></div>
+</div> <!-- end message -->
+<div class="clear"></div>
+
+<div class="title">
+
+<div class="from">
+From: <font color="#9b9b9b">Csaba Fazekas</font>
+<div class="clear"></div>
+</div> <!-- end from -->
+
+<div class="easel">
+
+Easel:  <font color="#9b9b9b">xyz easel</font>
+<div class="clear"></div>
+</div> <!-- end easal -->
+
+<div class="clear"></div>
+</div> <!--  end subject -->
+
+<div class="clear"></div>
+<p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+<br />
+<br />
+<a href="#"><img src="images/reply-inbox.png" alt="Reply" /></a>
+</p> <!-- end message description -->
+
+
+<div class="clear"></div>
+
+
+<div class="title">
+
+<div class="from">
+From: <font color="#9b9b9b">Esther Kuperman</font>
+<div class="clear"></div>
+</div> <!-- end from -->
+
+<div class="easel">
+
+Easel:  <font color="#9b9b9b">xyz easel</font>
+<div class="clear"></div>
+</div> <!-- end easal -->
+
+<div class="clear"></div>
+</div> <!--  end subject -->
+
+<div class="clear"></div>
+<p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+<br />
+<br />
+<a href="#" class="reply"><img src="images/reply-inbox.png" alt="Reply" /></a>
+<br />
+<br />
+<a href="#"> <img src="images/more.png" alt="More" /></a>
+</p> <!-- end message description -->
+
+<div class="clear"></div>
+
+</div> <!-- end wrapper -->
+
+<div class="clear"></div>
+<div class="footer">
+<div class="clear"></div>
+
+<div class="footer-links"><!--start class-->
+<ul>
+<li><a href="#">About</a></li>
+<li><a href="#">FAQ</a></li>
+<li><a href="#">Explore</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Sticker Gallery</a></li>
+<li><a href="#">Create</a></li>
+</ul>
+<div class="clear"></div>
+</div><!--end class-->
+<div class="clear"></div>
+<div class="text">
+    <a href="#" class="socialLinks">
+        <img src="images/pintrest_01.jpg" height="22" alt=""/>
+    </a>
+    <a href="#" class="socialLinks">
+        <img src="images/google-plus_02.jpg" height="22" alt=""/>
+    </a>
+    <a href="#" class="socialLinks">
+        <img src="images/facebook_02.jpg" height="22" alt=""/>
+    </a>
+    <a href="#" class="socialLinks">
+        <img src="images/twiteer_02.jpg" height="22" alt=""/>
+    </a>
+    <a href="#" class="socialLinks">
+        <img src="images/linkdin_02.jpg" height="22" alt=""/>
+    </a>
+<div class="clear"></div>
+</div>
+
+<div class="clear"></div>
+<div class="copyright">
+Copyright © 2013. White Easel
+</div>
+
+<div class="clear"></div>
+</div> <!-- end footer -->
+
+<div class="clear"></div>
+</body>
+</html>

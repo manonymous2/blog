@@ -1,0 +1,394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>advanced_search</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<link href="jquery.selectbox.css" type="text/css" rel="stylesheet" />
+<!-- drop down menu -->
+<script type="text/javascript" src="jquery.min.js"></script>
+
+<style type="text/css">
+    .sbHolder{
+        background-image: url("images/dropdownbg2_03.png");
+        height: 39px;
+        margin-left: 15px;
+        margin-right: 0;
+        width: 206px;
+    }
+    .sbSelector{
+        margin-left: 15px;
+    }
+    .sbOptions{
+        width: 255px;
+    }
+</style>
+<script type="text/javascript" >
+function clearFields(id, value){
+    if($(id).val() == value){
+        $(id).val('');
+    }
+}
+function fillValue(id, value){
+    if($(id).val() == ''){
+        $(id).val(value);
+    }
+}
+</script>
+</head>
+<body>
+
+<div id="wrapper"><!--start wrapper-->
+<div class="header">
+<div class="login">
+</div>
+
+<div class="post">
+</div>
+
+<div class="create">
+</div>
+
+<div class="join">
+</div>
+<div class="clear"></div>
+<div class="logo">
+
+<img src="images/logo.png" width="261" height="118" class="left" />
+
+<div class="clear"></div>
+</div>
+
+
+
+
+<div class="search">
+<form method="post" name="search">
+<input type="text" value=".::. search easels .::."  class="text"/>
+<input type="image" src="images/search-icon.png" class="right" alt="Search" />
+</form>
+</div>
+<div class="clear"></div>
+
+<div class="advance">
+<a href="#">advanced search</a>
+</div>
+
+<div class="clear"></div>
+</div> <!-- end header -->
+
+
+<div class="clear"></div>
+</div> <!-- end wrapper -->
+<div class="bottom">
+</div>
+
+<div id="content">
+<div class="sticker_gallerytitle"></div>
+<div class="clear"></div>
+
+
+<div class="post-page-title" style="border-bottom: 2px dotted #F3DCAD;border-top: 2px dotted #F3DCAD;">
+
+<div style="height: 53px;">
+    <span class="searchstickersearchbox">
+        <input type="text" value="Search Stickers" class="input" onblur="fillValue(this, 'Search Stickers');" onfocus="clearFields(this, 'Search Stickers');" />
+        <div class="icon">
+            <a href="#"><img alt="search" src="images/easal-search-icon.png" alt="" /></a>
+        </div>
+    </span>
+<!--    <span class="searchSticker">
+        <input type="text" class="sticker_galleryInput" value="Search Stickers" onblur="fillValue(this, 'Searh Stickers');" onfocus="clearFields(this, 'Searh Stickers');" />
+        <a href=""><img style="margin-left: 11px;margin-top: 13px;" src="images/drop-arrow.png" alt="" /></a>
+    </span>-->
+    
+    <span class="sortby">Sort by:</span>
+    
+    <select class="image" name="popular" id="popular" tabindex="1">
+        <option value="">Popular</option>
+    </select>
+    
+    <select class="image" name="engagement" id="engagement" tabindex="1">
+        <option value="">Engagement</option>
+    </select>
+</div>
+    
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.selectbox-0.2.js"></script>
+<script type="text/javascript">
+$(function () {
+        $("#popular").selectbox();
+        $("#engagement").selectbox();
+});
+</script>
+</div>
+
+<div class="clear"></div>
+
+<div class="post-page" style="margin-left: -20px;width: 1020px;">
+
+<table>
+
+<tr>
+    <td style="padding-bottom: 0px;"> <a href="#"><img src="images/left-arrow.png" alt="Pre" /> </a></td>
+    <td style="padding-bottom: 0px;">
+        <div class="sticker">
+            <div>
+                <img class="left" src="images/sliderimg1_03.png" alt="" />
+                <div class="right" style="width: 85px;">
+                    <div class="text">Vote</div>
+                    <span class="arrowCont">
+                        <a href=""><img src="images/likearrow1_03.png" alt="" /></a>
+                        <a href=""><img src="images/likearrow2_03.png" alt="" /></a><br />
+                    </span>
+                    <a href="" class="postbg"><img src="images/postbg_03.png" alt="" /></a>
+                    <div class="text" style="font-size:16px;color: #e76212;">3 posts</div>
+                </div>
+            </div>
+            <div class="anniversary">Anniversary</div>
+        </div>
+        <div class="sticker">
+            <div>
+                <img class="left" src="images/sliderimg2_03.png" alt="" />
+                <div class="right" style="width: 85px;">
+                    <div class="text">Vote</div>
+                    <span class="arrowCont">
+                        <a href=""><img src="images/likearrow1_03.png" alt="" /></a>
+                        <a href=""><img src="images/likearrow2_03.png" alt="" /></a><br />
+                    </span>
+                    <a href="" class="postbg"><img src="images/postbg_03.png" alt="" /></a>
+                    <div class="text" style="font-size:16px;color: #e76212;">4 posts</div>
+                </div>
+            </div>
+            <div class="anniversary">Anniversary</div>
+        </div>
+        <div class="sticker">
+            <div>
+                <img class="left" src="images/sliderimg3_03.png" alt="" />
+                <div class="right" style="width: 85px;">
+                    <div class="text">Vote</div>
+                    <span class="arrowCont">
+                        <a href=""><img src="images/likearrow1_03.png" alt="" /></a>
+                        <a href=""><img src="images/likearrow2_03.png" alt="" /></a><br />
+                    </span>
+                    <a href="" class="postbg"><img src="images/postbg_03.png" alt="" /></a>
+                    <div class="text" style="font-size:16px;color: #e76212;">5 posts</div>
+                </div>
+            </div>
+            <div class="anniversary">Anniversary</div>
+        </div>
+        <div class="sticker">
+            <div>
+                <img class="left" src="images/sliderimg4_03.png" alt="" />
+                <div class="right" style="width: 85px;">
+                    <div class="text">Vote</div>
+                    <span class="arrowCont">
+                        <a href=""><img src="images/likearrow1_03.png" alt="" /></a>
+                        <a href=""><img src="images/likearrow2_03.png" alt="" /></a><br />
+                    </span>
+                    <a href="" class="postbg"><img src="images/postbg_03.png" alt="" /></a>
+                    <div class="text" style="font-size:16px;color: #e76212;">6 posts</div>
+                </div>
+            </div>
+            <div class="anniversary">Anniversary</div>
+        </div>
+        <div class="sticker">
+            <div>
+                <img class="left" src="images/sliderimg8_03.png" alt="" />
+                <div class="right" style="width: 85px;">
+                    <div class="text">Vote</div>
+                    <span class="arrowCont">
+                        <a href=""><img src="images/likearrow1_03.png" alt="" /></a>
+                        <a href=""><img src="images/likearrow2_03.png" alt="" /></a><br />
+                    </span>
+                    <a href="" class="postbg"><img src="images/postbg_03.png" alt="" /></a>
+                    <div class="text" style="font-size:16px;color: #e76212;">3 posts</div>
+                </div>
+            </div>
+            <div class="anniversary">Anniversary</div>
+        </div>
+        <div class="sticker">
+            <div>
+                <img class="left" src="images/sliderimg7_03.png" alt="" />
+                <div class="right" style="width: 85px;">
+                    <div class="text">Vote</div>
+                    <span class="arrowCont">
+                        <a href=""><img src="images/likearrow1_03.png" alt="" /></a>
+                        <a href=""><img src="images/likearrow2_03.png" alt="" /></a><br />
+                    </span>
+                    <a href="" class="postbg"><img src="images/postbg_03.png" alt="" /></a>
+                    <div class="text" style="font-size:16px;color: #e76212;">4 posts</div>
+                </div>
+            </div>
+            <div class="anniversary">Anniversary</div>
+        </div>
+        <div class="sticker">
+            <div>
+                <img class="left" src="images/sliderimg6_03.png" alt="" />
+                <div class="right" style="width: 85px;">
+                    <div class="text">Vote</div>
+                    <span class="arrowCont">
+                        <a href=""><img src="images/likearrow1_03.png" alt="" /></a>
+                        <a href=""><img src="images/likearrow2_03.png" alt="" /></a><br />
+                    </span>
+                    <a href="" class="postbg"><img src="images/postbg_03.png" alt="" /></a>
+                    <div class="text" style="font-size:16px;color: #e76212;">5 posts</div>
+                </div>
+            </div>
+            <div class="anniversary">Anniversary</div>
+        </div>
+        <div class="sticker">
+            <div>
+                <img class="left" src="images/sliderimg5_03.png" alt="" />
+                <div class="right" style="width: 85px;">
+                    <div class="text">Vote</div>
+                    <span class="arrowCont">
+                        <a href=""><img src="images/likearrow1_03.png" alt="" /></a>
+                        <a href=""><img src="images/likearrow2_03.png" alt="" /></a><br />
+                    </span>
+                    <a href="" class="postbg"><img src="images/postbg_03.png" alt="" /></a>
+                    <div class="text" style="font-size:16px;color: #e76212;">6 posts</div>
+                </div>
+            </div>
+            <div class="anniversary">Anniversary</div>
+        </div>
+        <div class="sticker">
+            <div>
+                <img class="left" src="images/sliderimg1_03.png" alt="" />
+                <div class="right" style="width: 85px;">
+                    <div class="text">Vote</div>
+                    <span class="arrowCont">
+                        <a href=""><img src="images/likearrow1_03.png" alt="" /></a>
+                        <a href=""><img src="images/likearrow2_03.png" alt="" /></a><br />
+                    </span>
+                    <a href="" class="postbg"><img src="images/postbg_03.png" alt="" /></a>
+                    <div class="text" style="font-size:16px;color: #e76212;">3 posts</div>
+                </div>
+            </div>
+            <div class="anniversary">Anniversary</div>
+        </div>
+        <div class="sticker">
+            <div>
+                <img class="left" src="images/sliderimg2_03.png" alt="" />
+                <div class="right" style="width: 85px;">
+                    <div class="text">Vote</div>
+                    <span class="arrowCont">
+                        <a href=""><img src="images/likearrow1_03.png" alt="" /></a>
+                        <a href=""><img src="images/likearrow2_03.png" alt="" /></a><br />
+                    </span>
+                    <a href="" class="postbg"><img src="images/postbg_03.png" alt="" /></a>
+                    <div class="text" style="font-size:16px;color: #e76212;">4 posts</div>
+                </div>
+            </div>
+            <div class="anniversary">Anniversary</div>
+        </div>
+        <div class="sticker">
+            <div>
+                <img class="left" src="images/sliderimg3_03.png" alt="" />
+                <div class="right" style="width: 85px;">
+                    <div class="text">Vote</div>
+                    <span class="arrowCont">
+                        <a href=""><img src="images/likearrow1_03.png" alt="" /></a>
+                        <a href=""><img src="images/likearrow2_03.png" alt="" /></a><br />
+                    </span>
+                    <a href="" class="postbg"><img src="images/postbg_03.png" alt="" /></a>
+                    <div class="text" style="font-size:16px;color: #e76212;">5 posts</div>
+                </div>
+            </div>
+            <div class="anniversary">Anniversary</div>
+        </div>
+        <div class="sticker">
+            <div>
+                <img class="left" src="images/sliderimg4_03.png" alt="" />
+                <div class="right" style="width: 85px;">
+                    <div class="text">Vote</div>
+                    <span class="arrowCont">
+                        <a href=""><img src="images/likearrow1_03.png" alt="" /></a>
+                        <a href=""><img src="images/likearrow2_03.png" alt="" /></a><br />
+                    </span>
+                    <a href="" class="postbg"><img src="images/postbg_03.png" alt="" /></a>
+                    <div class="text" style="font-size:16px;color: #e76212;">6 posts</div>
+                </div>
+            </div>
+            <div class="anniversary">Anniversary</div>
+        </div>
+    </td>
+    <td style="padding-bottom: 0px;"> <a href="#"><img src="images/right-arrow.png" /> </a></td>
+</tr>
+
+</table>
+
+<div class="clear"></div>
+</div> <!-- end post page -->
+<div class="clear"></div>
+
+</div> <!-- end wrapper -->
+
+<div class="clear"></div>
+<div class="footer">
+    <div class="footer-page">
+        <div class="footer-page-inner"></div>
+        <div class="page">
+            <img src="images/pages.png" alt="pages" />
+        </div>
+        <div class="page-number" style="z-index:4; position:relative;">
+            <a href="#">1</a>
+        </div>
+        <div class="page-number" style="z-index:3; position:relative;">
+            <a href="#">2</a>
+        </div>
+        <div class="page-number" style="z-index:2; position:relative;">
+            <a href="#">3</a>
+        </div>
+        <div class="page-number" style="z-index:1; position:relative;">
+            <a href="#">4</a>
+        </div>
+        <div class="page-number" style="z-index:0; position:relative;">
+            <a href="#">5</a>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+<div class="clear"></div>
+<div class="footer-links"><!--start class-->
+<ul>
+<li><a href="#">About</a></li>
+<li><a href="#">FAQ</a></li>
+<li><a href="#">Explore</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Sticker Gallery</a></li>
+<li><a href="#">Create</a></li>
+</ul>
+<div class="clear"></div>
+</div><!--end class-->
+<div class="clear"></div>
+<div class="text">
+    <a href="#" class="socialLinks">
+        <img src="images/pintrest_01.jpg" height="22" alt=""/>
+    </a>
+    <a href="#" class="socialLinks">
+        <img src="images/google-plus_02.jpg" height="22" alt=""/>
+    </a>
+    <a href="#" class="socialLinks">
+        <img src="images/facebook_02.jpg" height="22" alt=""/>
+    </a>
+    <a href="#" class="socialLinks">
+        <img src="images/twiteer_02.jpg" height="22" alt=""/>
+    </a>
+    <a href="#" class="socialLinks">
+        <img src="images/linkdin_02.jpg" height="22" alt=""/>
+    </a>
+<div class="clear"></div>
+</div>
+
+<div class="clear"></div>
+<div class="copyright">
+Copyright © 2013. White Easel
+</div>
+
+<div class="clear"></div>
+</div> <!-- end footer -->
+
+<div class="clear"></div>
+</body>
+</html>

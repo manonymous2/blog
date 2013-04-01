@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>advanced_search</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<link href="jquery.selectbox.css" type="text/css" rel="stylesheet" />
+<!-- drop down menu -->
+<script type="text/javascript" src="jquery.min.js"></script>
+</head>
+<body>
+    
+<div id="wrapper"><!--start wrapper-->
+<div class="header">
+<div class="login">
+</div>
+
+<div class="post">
+</div>
+
+<div class="create">
+</div>
+
+<div class="join">
+</div>
+<div class="clear"></div>
+<div class="logo">
+
+<img src="images/logo.png" width="261" height="118" class="left" />
+
+<div class="clear"></div>
+</div>
+
+
+
+
+<div class="search">
+<form method="post" name="search">
+<input type="text" value=".::. search easels .::."  class="text"/>
+<input type="image" src="images/search-icon.png" class="right" alt="Search" />
+</form>
+</div>
+<div class="clear"></div>
+
+<div class="advance">
+<a href="#">advanced search</a>
+</div>
+
+<div class="clear"></div>
+</div> <!-- end header -->
+
+
+<div class="clear"></div>
+</div> <!-- end wrapper -->
+<div class="bottom">
+</div>
+
+<div id="content">
+<div class="a-search"></div>
+<div class="clear"></div>
+
+<div class="category"><!--start menu-->
+
+<select class="image" name="category" id="category" tabindex="1">
+    <option value="">Category</option>
+    <option value="1">wedding</option>
+    <option value="2">engagement</option>
+    <option value="3">baby</option>
+    <option value="4">birthday</option>
+    <option value="5">graduation</option>
+    <option value="6">memorial</option>
+</select>
+
+<select class="image" name="uploaded" id="uploaded" tabindex="1">
+    <option value="">Uploaded</option>
+    <option value="1">this week</option>
+    <option value="2">last week</option>
+    <option value="3">last month</option>
+    <option value="4">before that</option>
+</select>
+    
+<select class="image" name="popularity" id="popularity" tabindex="1">
+    <option value="">Popularity</option>
+    <option value="1">popular</option>
+    <option value="2">rarely posted</option>
+    <option value="3">rare find</option>
+</select>
+    
+<select class="image" name="price" id="price" tabindex="1">
+    <option value="">Price</option>
+    <option value="1">free</option>
+    <option value="2">premium</option>
+    <option value="3">donation</option>
+</select>
+    
+<select class="image" name="shape" id="shape" tabindex="1">
+    <option value="">Shape</option>
+    <option value="1">round</option>
+    <option value="2">box</option>
+    <option value="3">rectangle</option>
+    <option value="4">triangle</option>
+</select>
+    
+<select class="image" name="color" id="color" tabindex="1">
+    <option value="">Color</option>
+    <option value="1">red</option>
+    <option value="2">black</option>
+    <option value="3">white</option>
+    <option value="4">purple</option>
+    <option value="5">blue</option>
+    <option value="6">green</option>
+    <option value="7">yellow</option>
+    <option value="8">brown</option>
+    <option value="9">sage</option>
+    <option value="10">gold</option>
+</select>
+    
+<select class="image" name="type" id="type" tabindex="1">
+    <option value="">Type</option>
+    <option value="1">funny</option>
+    <option value="2">sarcastic</option>
+    <option value="3">witty</option>
+    <option value="4">sappy</option>
+    <option value="5">anticipatory</option>
+    <option value="6">cuddly</option>
+    <option value="7">sympathetic</option>
+    <option value="8">sweet nothing</option>
+    <option value="9">congratulatory</option>
+    <option value="10">mazel tov</option>
+    <option value="11">cheers</option>
+</select>
+
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/jquery.selectbox-0.2.js"></script>
+<script type="text/javascript">
+$(function () {
+        $("#category").selectbox();
+        $("#uploaded").selectbox();
+        $("#popularity").selectbox();
+        $("#price").selectbox();
+        $("#shape").selectbox();
+        $("#color").selectbox();
+        $("#type").selectbox();
+});
+</script>
+
+<div class="class"></div>
+</div><!--end category-->
+<div class="clear"></div>
+
+<div class="s-search">
+<a href="#"><img src="images/search-button.png" alt="search" /></a>
+</div>
+
+<div class="clear"></div>
+
+</div> <!-- end wrapper -->
+
+<div class="clear"></div>
+<div class="footer">
+<div class="clear"></div>
+
+<div class="footer-links"><!--start class-->
+<ul>
+<li><a href="#">About</a></li>
+<li><a href="#">FAQ</a></li>
+<li><a href="#">Explore</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Sticker Gallery</a></li>
+<li><a href="#">Create</a></li>
+</ul>
+<div class="clear"></div>
+</div><!--end class-->
+<div class="clear"></div>
+<div class="text">
+    <a href="#" class="socialLinks">
+        <img src="images/pintrest_01.jpg" height="22" alt=""/>
+    </a>
+    <a href="#" class="socialLinks">
+        <img src="images/google-plus_02.jpg" height="22" alt=""/>
+    </a>
+    <a href="#" class="socialLinks">
+        <img src="images/facebook_02.jpg" height="22" alt=""/>
+    </a>
+    <a href="#" class="socialLinks">
+        <img src="images/twiteer_02.jpg" height="22" alt=""/>
+    </a>
+    <a href="#" class="socialLinks">
+        <img src="images/linkdin_02.jpg" height="22" alt=""/>
+    </a>
+<div class="clear"></div>
+</div>
+
+<div class="clear"></div>
+<div class="copyright">
+Copyright © 2013. White Easel
+</div>
+
+<div class="clear"></div>
+</div> <!-- end footer -->
+
+<div class="clear"></div>
+</body>
+</html>
